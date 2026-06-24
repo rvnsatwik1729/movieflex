@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieflex - Discover Movies</title>
+
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Movieflex</h1>
+
+            <div class="nav-links">
+                <a href="index.html" class="homeLink">Home</a>
+                <a href="watchList.html" class="watchlistLink">❤️ Watchlist</a>
+                <button id="themeBtn">🌙</button>
+            </div>
+
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search a movie..."
+                autocomplete="off"
+            >
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h2>Discover Movies</h2>
+                <p>
+                    Search and explore thousands of movies from around the world.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies">
+
+        <h2>Trending Movies</h2>
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Loading movies...</p>
+        </div>
+
+        <div class="movies-container" id="results">
+
+        </div>
+
+        <div class="pagination">
+            <button id="prev">Prev</button>
+
+            <h2 id="pageNo">1</h2>
+
+            <button id="next">Next</button>
+        </div>
+
+    </section>
+
+    <div class="modal" id="movieModal">
+
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <img id="modalPoster" alt="Movie Poster">
+
+            <p id="modalYear"></p>
+
+            <p id="modalGenre"></p>
+
+            <p id="modalDescription"></p>
+
+            <div id="trailerContainer"></div>
+
+        </div>
+
+    </div>
+
+    <script src="movies.js"></script>
+
+</body>
+</html>
