@@ -33,6 +33,18 @@ nav{
     gap:15px;
 }
 
+.heading{
+    display: flex;
+    align-items: center;
+}
+
+.movieflex-logo{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.25rem;
+    border-radius: 50%;
+}
+
 nav h1{
     color:#B74F6F;
     font-size:2rem;
